@@ -1,0 +1,171 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lung Cancer Risk Prediction Form</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+  </head>
+  <body>
+    <h1 class="heading">Lung Cancer Risk Prediction Form</h1>
+
+    <form action="/predict" method="post">
+     
+    
+    </form>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lung Cancer Risk Prediction</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+  </head>
+  <body>
+    <h1 class="heading">Lung Cancer Risk Prediction</h1>
+    <form action="/predict" method="POST" class="prediction-form">
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required /><br />
+
+      <label for="gender" class="gender-label">Gender:</label>
+      <input type="radio" id="male gender-id" name="gender" value="Male" />
+      <label for="male" id="gender-id">Male</label>
+      <input type="radio" id="female gender-id" name="gender" value="Female" />
+      <label for="female" id="gender-id">Female</label><br />
+
+      <label for="air-pollution">Air Pollution: </label>
+      <p>(on scale 1- 8)</p>
+      <input
+        type="text"
+        id="air-pollution"
+        name="air-pollution"
+        required
+      /><br />
+
+      <label for="alcohol-use">Alcohol Use:</label>
+      <p>(on scale 1- 8)</p>
+      <input type="text" id="alcohol-use" name="alcohol-use" required /><br />
+
+      <label for="dust-allergy">Dust Allergy:</label>
+      <p>(on scale 1- 8)</p>
+      <input type="text" id="dust-allergy" name="dust-allergy" required /><br />
+
+      <label for="occu-hazards">Occupational Hazards:</label>
+      <p>(on scale 1- 8)</p>
+      <input type="text" id="occu-hazards" name="occu-hazards" required /><br />
+
+      <label for="genetic-risk">Genetic Risk:</label>
+      <p>(on scale 1- 7)</p>
+      <input type="text" id="genetic-risk" name="genetic-risk" required /><br />
+
+      <label for="lung-disease">Chronic Lung Disease:</label>
+      <p>(on scale 1- 7)</p>
+      <input type="text" id="lung-disease" name="lung-disease" required /><br />
+
+      <label for="balanced-diet">Balanced Diet:</label>
+      <p>(on scale 1- 7)</p>
+      <input
+        type="text"
+        id="balanced-diet"
+        name="balanced-diet"
+        required
+      /><br />
+
+      <label for="obesity">Obesity:</label>
+      <p>(on scale 1- 7)</p>
+      <input type="text" id="obesity" name="obesity" required /><br />
+
+      <label for="smoking">Smoking:</label>
+      <p>(on scale 1- 8)</p>
+      <input type="text" id="smoking" name="smoking" required /><br />
+
+      <label for="passive-smoker">Passive Smoker:</label>
+      <p>(on scale 1- 8)</p>
+      <input
+        type="text"
+        id="passive-smoker"
+        name="passive-smoker"
+        required
+      /><br />
+
+      <label for="chest-pain">Chest Pain:</label>
+      <p>(on scale 1- 9)</p>
+      <input type="text" id="chest-pain" name="chest-pain" required /><br />
+
+      <label for="coughing-blood">Coughing of Blood:</label>
+      <p>(on scale 1- 9)</p>
+      <input
+        type="text"
+        id="coughing-blood"
+        name="coughing-blood"
+        required
+      /><br />
+
+      <label for="fatigue">Fatigue:</label>
+      <p>(on scale 1- 9)</p>
+      <input type="text" id="fatigue" name="fatigue" required /><br />
+
+      <label for="weight-loss">Weight Loss:</label>
+      <p>(on scale 1- 8)</p>
+      <input type="text" id="weight-loss" name="weight-loss" required /><br />
+
+      <label for="shortness-of-breath">Shortness of Breath:</label>
+      <p>(on scale 1- 9)</p>
+      <input
+        type="text"
+        id="shortness-of-breath"
+        name="shortness-of-breath"
+      /><br />
+
+      <label for="wheezing">Wheezing:</label>
+      <p>(on scale 1- 8)</p>
+      <input type="text" id="wheezing" name="wheezing" required /><br />
+
+      <label for="swallowing-difficulty">Swallowing Difficulty:</label>
+      <p>(on scale 1- 8)</p>
+      <input
+        type="text"
+        id="swallowing-difficulty"
+        name="swallowing-difficulty"
+      /><br />
+
+      <label for="clubbing-finger-nails">Clubbing of Finger Nails:</label>
+      <p>(on scale 1- 9)</p>
+      <input
+        type="text"
+        id="clubbing-finger-nails"
+        name="clubbing-finger-nails"
+      /><br />
+
+      <label for="frequent-cold">Frequent Cold:</label>
+      <p>(on scale 1- 7)</p>
+      <input
+        type="text"
+        id="frequent-cold"
+        name="frequent-cold"
+        required
+      /><br />
+
+      <label for="dry-cough">Dry Cough:</label>
+      <p>(on scale 1- 7)</p>
+      <input type="text" id="dry-cough" name="dry-cough" required /><br />
+
+      <label for="snoring">Snoring:</label>
+      <p>(on scale 1- 7)</p>
+      <input type="text" id="snoring" name="snoring" required /><br />
+
+      <div class="submit-button-div">
+        <button type="submit">Predict</button>
+      </div>
+    </form>
+  </body>
+</html>

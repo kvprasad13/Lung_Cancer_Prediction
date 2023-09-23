@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lung Cancer Risk Prediction Result</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='predict.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Lung Cancer Risk Prediction Result</h1>
+
+    <div>
+      <h2>Predicted Risk Level:</h2>
+      {% if predicted_level == 'Low' %}
+      <h1 class="low">{{ predicted_level }}</h1>
+      {% elif predicted_level == 'Medium' %}
+      <h1 class="medium">{{ predicted_level }}</h1>
+      {% elif predicted_level == 'High' %}
+      <h1 class="high">{{ predicted_level }}</h1>
+      {% endif %}
+    </div>
+
+    <div>
+      <a href="/"><button type="submit">Back to Home</button></a>
+    </div>
+  </body>
+</html>
