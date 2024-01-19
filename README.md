@@ -37,12 +37,19 @@
   #### 1. Clone the repository
    
        git clone https://github.com/your-username/lung-cancer-prediction.git
-       cd lung-cancer-prediction
+       cd Lung_Cancer_Prediction
 
 #### 2. Install dependencies
       pip install -r requirements.txt
 
 #### 3. Run the prediction model
-    python predict_lung_cancer.py
-## Author
-    Varaprasad Kade
+    python LungCancerPrediction.py
+## Folder Structure
+    Lung_Cancer_Prediction/
+    |-- cancer-patient-data-sets.csv   # Dataset used for training the model
+    |-- LungCancerPrediction.ipynb  # Colab Notebook containing the model development
+    |-- README.md   # Project documentation
+  
+  
+  ## Author
+      Varaprasad Kade
